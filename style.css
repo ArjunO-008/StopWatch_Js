@@ -1,0 +1,91 @@
+* {
+    margin: 0%;
+    box-sizing: border-box;
+    padding: 0%;
+    font-family: monospace;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: #ebe6e6;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+.content {
+    border-radius: 25px;
+    min-width: 40%;
+    min-height: 50vh;
+    background-color: #f3f0f0;
+    box-shadow: 8px 8px 12px 7px #00000073;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.timer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    user-select: none;
+}
+
+.buttons {
+    height: 15vh;
+    width: 100%;
+    margin-top: 45px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    user-select: none;
+}
+
+.play,
+.pause,
+.reset {
+    box-shadow: 3px 3px 6px 0px #000;
+    border: solid 1px #000;
+    margin: 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background-color: #f3f0f0;
+    transition: all 0.2s;
+}
+
+.pause {
+    background-image: url(Images/pause.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play {
+    background-image: url(Images/play.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.reset {
+    background-image: url(Images/replay.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+.play:hover,
+.pause:hover {
+    background-color: #b7b7b7;
+    box-shadow: inset 3px 3px 6px 0px #000;
+    cursor: pointer;
+}
+
+.reset:hover {
+    background-color: #C62828;
+    box-shadow: inset 3px 3px 6px 0px #000;
+    cursor: pointer;
+}
